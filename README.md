@@ -15,8 +15,10 @@ El juego consiste en responder preguntas de opción múltiple.
 ## 🚀 Funcionalidades
 - Menú principal con distintas opciones:
   1. **Jugar trivia completa** (5 preguntas seguidas).  
+     - Al terminar, se muestra tu puntaje final y el ranking actualizado.  
   2. **Responder una pregunta al azar**.  
-  3. **Ver ranking de jugadores**.  
+     - También muestra tu puntaje y el ranking al finalizar.  
+  3. **Ver ranking de jugadores** en cualquier momento.  
   4. **Reiniciar puntajes** y comenzar una nueva partida.  
   5. **Salir del juego**.  
 
@@ -26,7 +28,12 @@ El juego consiste en responder preguntas de opción múltiple.
   - Respuesta correcta.  
   - Métodos `mostrar()` y `verificar()`.  
 
-- **Simulación de rivales**: Juan, María y Pedro reciben puntajes aleatorios cada vez que jugás, para que el ranking sea dinámico.  
+- **Función constructora `Jugador`** para crear jugadores con:
+  - ID único.  
+  - Nombre.  
+  - Puntaje inicializado en 0.  
+
+- **Simulación de rivales**: Juan, María y Pedro reciben puntajes aleatorios cada vez que jugás, para que el ranking sea dinámico y competitivo.  
 
 ---
 
@@ -37,30 +44,3 @@ El juego consiste en responder preguntas de opción múltiple.
 ---
 
 ## 📂 Estructura del proyecto
-
-Trivia-Millonaria/
-│
-├── README.md        # Documentación del proyecto
-├── index.html       # Archivo HTML para correr el juego
-└── script.js        # Lógica principal en JavaScript
-
-
----
-
-🏆 Ejemplo de Ranking
-Ranking:
-1. Vos: 9
-2. María: 7
-3. Juan: 5
-4. Pedro: 3
-
-💡 Ideas futuras
-
-Evitar que las preguntas al azar se repitan hasta que se terminen todas.
-
-Guardar puntajes históricos en localStorage.
-
-Agregar más jugadores ficticios o niveles de dificultad.
-
-👨‍💻 Autor
-Proyecto desarrollado por Ema como práctica de programación JS
